@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <!-- Pixel Cartoon Elements -->
+        <div class="pixel-container">
+            <div class="pixel-char pixel-1"></div>
+            <div class="pixel-char pixel-2"></div>
+            <div class="pixel-char pixel-3"></div>
+            <div class="pixel-star star-1">✦</div>
+            <div class="pixel-star star-2">✦</div>
+            <div class="pixel-star star-3">✦</div>
+            <div class="pixel-code code-1">&lt;/&gt;</div>
+            <div class="pixel-code code-2">{}</div>
+            
+            <!-- Moving Robots -->
+            <div class="robot robot-1">
+                <div class="robot-head">
+                    <div class="robot-antenna"></div>
+                    <div class="robot-eyes">
+                        <div class="robot-eye"></div>
+                        <div class="robot-eye"></div>
+                    </div>
+                </div>
+                <div class="robot-body"></div>
+            </div>
+            <div class="robot robot-2">
+                <div class="robot-head">
+                    <div class="robot-antenna"></div>
+                    <div class="robot-eyes">
+                        <div class="robot-eye"></div>
+                        <div class="robot-eye"></div>
+                    </div>
+                </div>
+                <div class="robot-body"></div>
+            </div>
+            
+            <!-- IT Icons -->
+            <div class="tech-icon icon-1">💻</div>
+            <div class="tech-icon icon-2">⚙️</div>
+            <div class="tech-icon icon-3">🔌</div>
+            <div class="tech-icon icon-4">📡</div>
+            <div class="tech-icon icon-5">🖥️</div>
+            
+            <!-- Binary Code Rain -->
+            <div class="binary binary-1">01010</div>
+            <div class="binary binary-2">11001</div>
+            <div class="binary binary-3">10110</div>
+            
+            <!-- Circuit Lines -->
+            <div class="circuit circuit-1"></div>
+            <div class="circuit circuit-2"></div>
+            
+            <!-- Floating Tech Stack Icons -->
+            <div class="floating-tech-icon float-icon-1"><i class="devicon-html5-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-2"><i class="devicon-css3-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-3"><i class="devicon-javascript-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-4"><i class="devicon-python-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-5"><i class="devicon-bootstrap-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-6"><i class="devicon-mysql-plain colored"></i></div>
+            <div class="floating-tech-icon float-icon-7"><i class="devicon-github-original"></i></div>
+            <div class="floating-tech-icon float-icon-8"><i class="devicon-photoshop-plain colored"></i></div>
+        </div>
+        
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="profile-pic">
+                    <img src="img/picture.jpg" alt="My Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Lyndon L. Tamarion Jr.</h1>
+                    <p class="subtitle">BS Information Technology Student</p>
+                    <p class="description">Focused on <span class="highlight">UI Design</span>, <span class="highlight">Front-End</span> & <span class="highlight">Back-End</span> Development</p>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn">View My Work</a>
+                <button class="btn btn-secondary" onclick="openTechModal()">Tech Stack & Tools</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tech Stack Modal -->
+    <div id="tech-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTechModal()">&times;</button>
+            <h2 class="section-title">Tech Stack & Tools</h2>
+            
+            <div class="tech-categories-wrapper">
+                <!-- Development -->
+                <div class="tech-category">
+                    <h3 class="category-title">💻 Development</h3>
+                    <div class="tech-stack-container">
+                        <div class="tech-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-xampp-plain colored"></i>
+                            <span>XAMPP</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Creative Studio -->
+                <div class="tech-category">
+                    <h3 class="category-title">🎨 Creative Studio</h3>
+                    <div class="tech-stack-container">
+                        <div class="tech-item">
+                            <i class="devicon-photoshop-plain colored"></i>
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="tech-item creative-icon">
+                            <span class="custom-icon">🖌️</span>
+                            <span>Krita</span>
+                        </div>
+                        <div class="tech-item creative-icon">
+                            <span class="custom-icon">🎨</span>
+                            <span>Digital Art</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 | Designed By Lyndon aka Daichai</p>
+    </footer>
+
+    <script>
+        // Modal Functions
+        function openTechModal() {
+            document.getElementById('tech-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeTechModal() {
+            document.getElementById('tech-modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('tech-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeTechModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeTechModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
